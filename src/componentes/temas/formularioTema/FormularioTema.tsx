@@ -2,7 +2,7 @@ import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from '../../../contextos/AuthContext';
 import Tema from '../../../models/Tema';
-import { atualizar, buscar, cadastrar } from '../../../services/Services';
+import { atualizar, buscar, cadastrar} from '../../../services/Services';
 
 function FormularioTema() {
   const [tema, setTema] = useState<Tema>({} as Tema);
